@@ -4867,6 +4867,8 @@ a.badge:focus {
 .jumbotron h1,
 .jumbotron .h1 {
   color: #ffffff;
+  text-align: center;
+  margin-top: 150px;
 }
 .jumbotron p {
   margin-bottom: 15px;
