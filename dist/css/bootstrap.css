@@ -4863,11 +4863,11 @@ a.badge:focus {
   background-image: url('../../images/graduation.jpg');
   background-position: bottom -200px left 0;
   min-height: 650px;
+  text-align: center;
 }
 .jumbotron h1,
 .jumbotron .h1 {
   color: #ffffff;
-  text-align: center;
   margin-top: 150px;
 }
 .jumbotron p {
