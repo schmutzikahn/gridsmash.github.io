@@ -8,6 +8,19 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
+    <!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-MTR8KW"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MTR8KW');</script>
+<!-- End Google Tag Manager -->
+    <script type="text/javascript">
+document.write(unescape("%3Cscript src='//munchkin.marketo.net/munchkin.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script>Munchkin.init('395-HSK-917', { "cookieAnon" : false });</script>
 
     <title>Title</title>
 
@@ -85,6 +98,22 @@
       <hr>
 
       <footer>
+      Munchkin.munchkinFunction(
+   'associateLead',
+   {
+      Campus Code: <?php echo "decodeURIComponent(\"". rawurlencode($_REQUEST["campus"]) . "\")"?>,
+      Program Code: <?php echo "decodeURIComponent(\"". rawurlencode($_REQUEST["program_code"]) . "\")"?>,
+      First Name: <?php echo "decodeURIComponent(\"". rawurlencode($_REQUEST["FirstName"]) . "\")"?>,
+      Last Name: <?php echo "decodeURIComponent(\"". rawurlencode($_REQUEST["LastName"]) . "\")"?>,
+      Email Address: <?php echo "decodeURIComponent(\"". rawurlencode($_REQUEST["Email"]) . "\")"?>,
+      Phone Number: <?php echo "decodeURIComponent(\"". rawurlencode($_REQUEST["Phone"]) . "\")"?>,
+      Address: <?php echo "decodeURIComponent(\"". rawurlencode($_REQUEST["Address"]) . "\")"?>,
+      City: <?php echo "decodeURIComponent(\"". rawurlencode($_REQUEST["City"]) . "\")"?>,
+      State: <?php echo "decodeURIComponent(\"". rawurlencode($_REQUEST["State"]) . "\")"?>,
+      Postal Code: <?php echo "decodeURIComponent(\"". rawurlencode($_REQUEST["PostalCode"]) . "\")"?>
+   },
+   '<?php echo hash('sha1', '12345' . $_REQUEST["email"]); ?>'
+);
         <p>&copy; Gridsmash Protoyping 2015</p>
       </footer>
     </div> <!-- /container -->
